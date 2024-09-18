@@ -1,5 +1,5 @@
 
-![](<LAB2/On Premise.png>)
+IAAS.png
 
 IAAS
 
