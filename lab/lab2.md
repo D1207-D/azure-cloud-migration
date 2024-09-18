@@ -8,12 +8,12 @@ This document includes diagrams illustrating the architecture of the application
 
 ## IaaS Architecture
 
-![IaaS Architecture](images/iaas.png)
+![IaaS Architecture](images/2.png)
 
 ## PaaS Architecture
 
-![PaaS Architecture](images/paas.png)
+![PaaS Architecture](images/3.png)
 
 ## SaaS Architecture
 
-![SaaS Architecture](images/saas.png)
+![SaaS Architecture](images/4.png)
