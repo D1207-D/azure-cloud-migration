@@ -1,4 +1,4 @@
-# Cloud Migration Lab
+# Cloud Migration Lab 3
 
 ## Objective
 Welcome to the Cloud Migration Lab! In this lab, we’ll explore how a mid-sized retail company can transition its infrastructure from traditional on-premises solutions to the cloud. We’ll dive into the different offerings—**PaaS**, **IaaS**, and **SaaS**—available from various cloud providers like Azure, focusing on understanding concepts and designing a solid architecture.
