@@ -16,10 +16,10 @@ Here's a visual representation of our proposed architecture:
 ## 3. Target Architecture Description
 
 ### 3.1 Architecture Overview
-In our architecture, we have two main regions where the application will run. Each region hosts a virtual machine (VM) that acts as the web server (WebServerVM) and a SQL database (SQLVM). At the top, Azure Front Door serves as the global entry point, managing traffic and ensuring that user requests are efficiently routed to the right region. 
+This architecture consists of two main regions where the application will run. Each region hosts a virtual machine (VM) that acts as the web server (WebServerVM) and a SQL database (SQLVM). At the top, Azure Front Door serves as the global entry point, managing traffic and ensuring that user requests are efficiently routed to the right region. 
 
 ### 3.2 Redundancy and Failover Mechanisms
-To ensure our application is always available, we’ve incorporated several key features:
+To ensure application is always available, I’ve incorporated several key features:
 - **Global Load Balancer**: Azure Front Door intelligently routes incoming requests to the appropriate regional load balancers.
 - **Load Balancers**: Each region has an Azure Load Balancer that distributes traffic to the application gateways, ensuring no single server gets overwhelmed.
 - **Application Gateways**: These manage the web traffic to the VMs, providing additional security features like SSL termination and Web Application Firewall (WAF).
@@ -42,4 +42,4 @@ To ensure our application is always available, we’ve incorporated several key 
 2. **Set Up Failover Groups**: Implement failover groups to handle automatic database failover, ensuring seamless operation during outages.
 
 ## 5. Conclusion
-This high-level design presents a robust plan for deploying our application in a multi-region architecture using Azure services. With features like load balancing, geo-replication, and automatic failover, we aim to create a reliable and highly available application. This setup not only enhances performance but also safeguards against potential downtimes, ensuring our users have a smooth experience.
+This high-level design presents a robust plan for deploying the application in a multi-region architecture using Azure services. With features like load balancing, geo-replication, and automatic failover, aim is to create a reliable and highly available application. This setup not only enhances performance but also safeguards against potential downtimes, ensuring our users have a smooth experience.
