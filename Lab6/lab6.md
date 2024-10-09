@@ -34,15 +34,15 @@ graph TD
         Route53[Amazon Route 53] -->|DNS Resolution| CloudFront
     end
 
-    style LB fill:#f9f,stroke:#333,stroke-width:2px
-    style ASG fill:#ff9,stroke:#333,stroke-width:2px
-    style RDS fill:#9f9,stroke:#333,stroke-width:2px
-    style EFS fill:#9ff,stroke:#333,stroke-width:2px
-    style S3 fill:#f9f,stroke:#333,stroke-width:2px
-    style VPC fill:#ff9,stroke:#333,stroke-width:2px
-    style CloudFront fill:#f99,stroke:#333,stroke-width:2px
-    style Route53 fill:#9ff,stroke:#333,stroke-width:2px
-    style Monitoring fill:#f99,stroke:#333,stroke-width:2px
+    style LB fill:#f9f,stroke:#333,stroke-width:2px, color:#000
+    style ASG fill:#ff9,stroke:#333,stroke-width:2px, color:#000
+    style RDS fill:#9f9,stroke:#333,stroke-width:2px, color:#000
+    style EFS fill:#9ff,stroke:#333,stroke-width:2px, color:#000
+    style S3 fill:#f9f,stroke:#333,stroke-width:2px, color:#000
+    style VPC fill:#ff9,stroke:#333,stroke-width:2px, color:#000
+    style CloudFront fill:#f99,stroke:#333,stroke-width:2px, color:#000
+    style Route53 fill:#9ff,stroke:#333,stroke-width:2px, color:#000
+    style Monitoring fill:#f99,stroke:#333,stroke-width:2px, color:#000
 
 ```
 
