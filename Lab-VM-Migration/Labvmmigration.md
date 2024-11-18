@@ -37,7 +37,18 @@ The objective of this phase was to assess the migration readiness of two VMs run
 - Configure **backup policies** in Azure for both VMs to ensure data integrity.
 
 ### **Supporting Evidence**
-![Assessment Dashboard](path/to/assessment-screenshot.png)
+![Assessment Dashboard](./images/1.png)
+
+![Assessment Dashboard](./images/2.png)
+
+![Assessment Dashboard](./images/3.png)
+
+![Assessment Dashboard](./images/6.png)
+
+![Assessment Dashboard](./images/7.png)
+
+![Assessment Dashboard](./images/8.png)
+
 
 ---
 
@@ -79,7 +90,16 @@ The migration was performed using Azure Migrate's **lift-and-shift** approach, w
 - Post-migration, the VMs were fully operational, with no data loss or performance degradation.
 
 ### **Supporting Evidence**
-![Azure Migrate Completed Migration](path/to/migration-screenshot.png)
+
+![Assessment Dashboard](./images/7.png)
+
+![Assessment Dashboard](./images/8.png)
+
+![Assessment Dashboard](./images/9.png)
+
+![Assessment Dashboard](./images/10.png)
+
+
 
 ---
 
@@ -106,7 +126,24 @@ To verify the functionality of the migrated VMs in Azure, including the deployme
 
 ### **Supporting Evidence**
 - Application running in Azure:
-  ![Hello World Application Running](path/to/application-screenshot.png)
+
+![Assessment Dashboard](./images/11.png)
+
+![Assessment Dashboard](./images/12.png)
+
+![Assessment Dashboard](./images/13.png)
+
+![Assessment Dashboard](./images/14.png)
+
+![Assessment Dashboard](./images/15.png)
+
+![Assessment Dashboard](./images/16.png)
+
+![Assessment Dashboard](./images/17.png)
+
+![Assessment Dashboard](./images/18.png)
+
+![Assessment Dashboard](./images/19.png)
 
 ---
 
@@ -133,12 +170,55 @@ The migration lab provided valuable insights into the complexities of cloud migr
 
 ---
 
+## **Failover Testing**
+### **Objective**
+To ensure the resilience of the migrated "Hello World" application in Azure by conducting a failover test.
+
+### **Steps Taken**
+1. **Access the Application Before Failover**:
+   - Verified the application functionality by accessing `http://<Public_IP_of_VM1>`.
+   - Ensured the "Hello World" application was responsive and operational.
+
+2. **Simulate Failover**:
+   - Shut down the Azure VM hosting the application (VM1) from the Azure portal.
+   - Monitored the application’s inaccessibility during this period.
+
+3. **Recovery Process**:
+   - Restarted the VM using the Azure portal.
+   - Verified that the application became operational again after the VM was brought back online.
+
+### **Observations**
+- **During Failover**:
+  - The application was inaccessible, confirming the simulated downtime.
+- **After Failover**:
+  - Once the VM was restarted, the application returned to full functionality without any issues.
+
+### **Issues Encountered**
+- No significant issues were encountered during the failover simulation.
+
+### **Results**
+- The failover test validated the resilience of the migrated application.
+- The application successfully resumed operations after the VM restart, demonstrating its reliability in Azure.
+
+### **Supporting Evidence**
+- **Application Operational (Before Failover)**:
+
+  ![Before Failover](./images/19.png)
+
+- **Application Inaccessible (During Failover)**:
+
+  ![During Failover](./images/20.png)
+
+  ![During Failover](./images/21.png)
+
+- **Application Recovered (After Failover)**:
+
+  ![After Failover](./images/22.png)
+
+  ![During Failover](./images/23.png)
+
+
 ## **Conclusion**
 The VMware-to-Azure migration lab successfully demonstrated the entire lifecycle of assessing, migrating, and validating VMs in Azure. Both VMs were transitioned seamlessly, with the "Hello World" application fully functional in the Azure environment. This lab provided hands-on experience in addressing real-world challenges during cloud migration and highlighted best practices for ensuring a successful outcome.
 
 ---
-
-## **Appendix: Screenshots**
-- **Assessment Dashboard**: ![Assessment Dashboard](path/to/assessment-screenshot.png)
-- **Migration Completed**: ![Migration Completed](path/to/migration-screenshot.png)
-- **Application Running**: ![Application Running](path/to/application-screenshot.png)
